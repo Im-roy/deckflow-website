@@ -16,8 +16,9 @@
 /* ── Slide cards ─────────────────────────────────────────────── */
 .slide-card {
   flex: 0 0 100%;
-  min-height: 360px;
-  padding: 16px;
+  /* Scales from 360px on mobile up to 520px on wide screens */
+  min-height: clamp(360px, 30vw, 520px);
+  padding: 20px;
   border-radius: 28px;
 }
 
