@@ -1,0 +1,41 @@
+/* ================================================================
+   HEADER — Sticky nav, site navigation
+   ================================================================ */
+
+.site-header {
+  position: sticky;
+  top: 16px;
+  z-index: 20;
+  padding-top: 20px;
+}
+
+.site-header__inner {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 20px;
+  padding: 14px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.58);
+  border-radius: var(--radius-xl);
+  background: rgba(255, 250, 243, 0.72);
+  backdrop-filter: blur(16px);
+  box-shadow: var(--shadow-soft);
+}
+
+.site-nav {
+  display: inline-flex;
+  justify-content: center;
+  gap: 28px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+}
+
+.site-nav a {
+  transition: color var(--transition);
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  color: var(--color-text);
+}

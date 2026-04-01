@@ -1,0 +1,100 @@
+/* ================================================================
+   RESPONSIVE — Breakpoints
+   ================================================================ */
+
+/* ── Tablet / narrow desktop (≤ 1080px) ────────────────────── */
+@media (max-width: 1080px) {
+  .hero__title {
+    font-size: clamp(2.8rem, 6vw, 4.5rem);
+  }
+
+  .section-heading h2 {
+    max-width: none;
+  }
+
+  .comparison-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Mobile (≤ 760px) ───────────────────────────────────────── */
+@media (max-width: 760px) {
+  .shell,
+  .shell--wide {
+    width: min(calc(100% - 20px), var(--content-width-wide));
+  }
+
+  .site-header {
+    top: 10px;
+    padding-top: 10px;
+  }
+
+  .site-header__inner {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+  }
+
+  .site-header__inner .site-nav {
+    grid-column: 1 / -1;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  .hero {
+    padding-top: 36px;
+    padding-bottom: 56px;
+  }
+
+  .hero__center {
+    gap: 36px;
+  }
+
+  .hero__title {
+    font-size: clamp(2.2rem, 10vw, 3.4rem);
+  }
+
+  .hero__lede {
+    font-size: 1rem;
+  }
+
+  .hero__proof {
+    grid-template-columns: 1fr;
+  }
+
+  .preview-frame,
+  .comparison-card,
+  .proof-card {
+    padding: 20px;
+  }
+
+  .slide-card {
+    min-height: 280px;
+  }
+
+  .footer-cta__inner {
+    padding: 48px 24px;
+  }
+
+  .site-footer__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ── Small mobile (≤ 480px) ─────────────────────────────────── */
+@media (max-width: 480px) {
+  .hero__actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button--large {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero__proof {
+    grid-template-columns: 1fr;
+  }
+}

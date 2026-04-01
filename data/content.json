@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "title": "Deckflow | AI Presentation Generator — Stunning Slides in Seconds",
+    "description": "Deckflow uses AI to turn your ideas into beautifully structured, presentation-ready slides in seconds. No design skills required. Free to start.",
+    "ogTitle": "Deckflow — Create Stunning Presentations with AI in Seconds",
+    "ogDescription": "Turn your ideas into beautifully structured slides instantly. No design skills needed. Free to start."
+  },
+
+  "nav": {
+    "brand": "Deckflow",
+    "tagline": "AI presentation generator",
+    "links": [
+      { "label": "Home",          "href": "#hero" },
+      { "label": "Why Deckflow",  "href": "#problem-solution" },
+      { "label": "Get started",   "href": "#footer-cta" }
+    ],
+    "cta": "Try Deckflow Free"
+  },
+
+  "hero": {
+    "eyebrow": "Faster decks for class, work & fundraising",
+    "headline": "Create stunning presentations<br>with AI in seconds",
+    "subheadline": "Turn your ideas into beautifully structured slides instantly — whether you're preparing for a class project, a client presentation, or your next investor pitch.",
+    "cta": "Try Deckflow Free",
+    "microcopy": "No design skills needed • Free to start",
+
+    "proofCards": [
+      {
+        "icon": "🎓",
+        "title": "Students",
+        "description": "Turn rough notes into polished class decks before deadlines hit."
+      },
+      {
+        "icon": "💼",
+        "title": "Professionals",
+        "description": "Build clean updates, reports, and reviews without hours of formatting."
+      },
+      {
+        "icon": "🚀",
+        "title": "Founders",
+        "description": "Generate pitch-ready presentations with structure, pace, and clarity."
+      }
+    ],
+
+    "slides": [
+      {
+        "tag": "For students",
+        "title": "Class Project Deck",
+        "description": "Convert messy research into a clean storyline with sections, takeaways, and modern visuals.",
+        "colorClass": "slide-card--emerald"
+      },
+      {
+        "tag": "For professionals",
+        "title": "Quarterly Business Review",
+        "description": "Turn updates, metrics, and next steps into executive-ready slides without switching between tools.",
+        "colorClass": "slide-card--amber"
+      },
+      {
+        "tag": "For founders",
+        "title": "Investor Pitch Deck",
+        "description": "Build a strong fundraising narrative with problem, solution, traction, market, and ask in one flow.",
+        "colorClass": "slide-card--teal"
+      }
+    ]
+  },
+
+  "problemSolution": {
+    "eyebrow": "Problem to solution",
+    "headline": "Most people waste time making slides instead of making the message better.",
+    "subtext": "Deckflow removes the friction that slows presentations down: design work, structure decisions, tool-switching, and average-looking output.",
+
+    "problems": {
+      "badge": "Problems",
+      "title": "What slows you down today",
+      "items": [
+        { "icon": "⏱",  "text": "Spending hours designing slides" },
+        { "icon": "🤯", "text": "Struggling to structure content" },
+        { "icon": "🔄", "text": "Switching between tools constantly" },
+        { "icon": "😐", "text": "Average, forgettable presentations" }
+      ]
+    },
+
+    "solution": {
+      "badge": "Solution",
+      "title": "What Deckflow does instead",
+      "items": [
+        { "icon": "⚡️", "text": "Generate slides in seconds" },
+        { "icon": "🧠", "text": "AI structures your content automatically" },
+        { "icon": "✨", "text": "Beautiful layouts, zero effort" },
+        { "icon": "📤", "text": "Export instantly, share anywhere" }
+      ]
+    }
+  },
+
+  "footerCta": {
+    "eyebrow": "Get started today",
+    "headline": "Your next great presentation starts here.",
+    "subtext": "Join thousands of students, professionals, and founders already using Deckflow.",
+    "cta": "Try Deckflow Free",
+    "note": "No credit card required • Free forever plan"
+  },
+
+  "footer": {
+    "copyright": "© 2026 Deckflow. Built with ✦ and AI."
+  }
+}

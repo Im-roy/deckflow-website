@@ -4,26 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Primary SEO -->
-    <title>Deckflow | AI Presentation Generator — Stunning Slides in Seconds</title>
-    <meta
-      name="description"
-      content="Deckflow uses AI to turn your ideas into beautifully structured, presentation-ready slides in seconds. No design skills required. Free to start."
-    />
-    <meta name="keywords" content="AI presentation generator, slide maker, pitch deck AI, automated slides, Deckflow" />
+    <!-- SEO — values injected by content-renderer.js from data/content.json -->
+    <title>Deckflow</title>
+    <meta name="description" content="" />
     <link rel="canonical" href="https://deckflow.vercel.app/" />
 
-    <!-- Open Graph / Social -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://deckflow.vercel.app/" />
-    <meta property="og:title" content="Deckflow — Create Stunning Presentations with AI in Seconds" />
-    <meta property="og:description" content="Turn your ideas into beautifully structured slides instantly. No design skills needed. Free to start." />
-    <meta property="og:site_name" content="Deckflow" />
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website" />
+    <meta property="og:url"         content="https://deckflow.vercel.app/" />
+    <meta property="og:title"       content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name"   content="Deckflow" />
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Deckflow — AI Presentation Generator" />
-    <meta name="twitter:description" content="Turn your ideas into beautifully structured slides instantly. Free to start." />
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:title"       content="" />
+    <meta name="twitter:description" content="" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,24 +29,29 @@
       rel="stylesheet"
     />
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="./styles.css" />
+    <!-- Section-wise Stylesheets -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/carousel.css" />
+    <link rel="stylesheet" href="./css/problem-solution.css" />
+    <link rel="stylesheet" href="./css/footer-cta.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
 
     <!-- Structured Data -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Deckflow",
-        "applicationCategory": "BusinessApplication",
-        "description": "AI-powered presentation generator that turns ideas into stunning slides in seconds.",
-        "url": "https://deckflow.vercel.app/",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD"
-        }
-      }
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Deckflow",
+      "applicationCategory": "BusinessApplication",
+      "description": "AI-powered presentation generator that turns ideas into stunning slides in seconds.",
+      "url": "https://deckflow.vercel.app/",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    }
     </script>
   </head>
 
@@ -58,378 +59,171 @@
     <div class="page-backdrop" aria-hidden="true"></div>
 
     <div class="page">
-      <!-- ── HEADER ─────────────────────────────────────────────── -->
+
+      <!-- ═══════════════════════════════════════════════════════
+           HEADER
+           Text source: content.json → nav
+           ═══════════════════════════════════════════════════════ -->
       <header class="site-header">
         <div class="shell shell--wide site-header__inner">
+
           <a class="brand" href="#hero" aria-label="Deckflow home">
             <span class="brand__mark" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="1" y="1" width="9" height="9" rx="2.5" fill="white" fill-opacity="0.9"/>
-                <rect x="12" y="1" width="9" height="9" rx="2.5" fill="white" fill-opacity="0.6"/>
-                <rect x="1" y="12" width="9" height="9" rx="2.5" fill="white" fill-opacity="0.6"/>
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1"  y="1"  width="9" height="9" rx="2.5" fill="white" fill-opacity="0.9"/>
+                <rect x="12" y="1"  width="9" height="9" rx="2.5" fill="white" fill-opacity="0.6"/>
+                <rect x="1"  y="12" width="9" height="9" rx="2.5" fill="white" fill-opacity="0.6"/>
                 <rect x="12" y="12" width="9" height="9" rx="2.5" fill="white" fill-opacity="0.9"/>
               </svg>
             </span>
             <span class="brand__copy">
-              <strong>Deckflow</strong>
-              <span>AI presentation generator</span>
+              <strong data-brand></strong>
+              <span data-tagline></span>
             </span>
           </a>
 
-          <nav class="site-nav" aria-label="Primary navigation">
-            <a href="#hero">Home</a>
-            <a href="#problem-solution">Why Deckflow</a>
-            <a href="#footer-cta">Get started</a>
-          </nav>
+          <!-- Links injected by content-renderer -->
+          <nav class="site-nav" aria-label="Primary navigation" data-render="navLinks"></nav>
 
-          <a class="button button--primary" href="#footer-cta" id="nav-cta">Try Deckflow Free</a>
+          <a class="button button--primary" href="#footer-cta" id="nav-cta" data-nav-cta></a>
         </div>
       </header>
 
       <main>
-        <!-- ── HERO ───────────────────────────────────────────────── -->
+
+        <!-- ═══════════════════════════════════════════════════════
+             HERO SECTION
+             Text source: content.json → hero
+             ═══════════════════════════════════════════════════════ -->
         <section class="hero section" id="hero" aria-labelledby="hero-heading">
-          <div class="shell shell--wide hero__grid">
-            <!-- Left: copy -->
-            <div class="hero__content">
-              <span class="eyebrow">Faster decks for class, work &amp; fundraising</span>
-              <h1 class="hero__title" id="hero-heading">
-                Create stunning presentations with AI in seconds
-              </h1>
-              <p class="hero__lede">
-                Turn your ideas into beautifully structured slides instantly — whether you're
-                preparing for a class project, a client presentation, or your next investor pitch.
-              </p>
+          <div class="shell shell--wide hero__center">
+
+            <!-- Centred copy -->
+            <div class="hero__copy">
+              <span class="eyebrow" data-content="hero.eyebrow"></span>
+              <h1 class="hero__title" id="hero-heading" data-content="hero.headline"></h1>
+              <p class="hero__lede" data-content="hero.subheadline"></p>
 
               <div class="hero__actions">
                 <a class="button button--primary button--large" id="cta" href="#footer-cta">
                   <span class="button__icon" aria-hidden="true">✦</span>
-                  Try Deckflow Free
+                  <span data-content="hero.cta"></span>
                 </a>
-                <span class="hero__microcopy">No design skills needed&nbsp;•&nbsp;Free to start</span>
-              </div>
-
-              <!-- Audience proof cards -->
-              <div class="hero__proof" role="list">
-                <article class="proof-card" role="listitem">
-                  <div class="proof-card__icon" aria-hidden="true">🎓</div>
-                  <h2>Students</h2>
-                  <p>Turn rough notes into polished class decks before deadlines hit.</p>
-                </article>
-                <article class="proof-card" role="listitem">
-                  <div class="proof-card__icon" aria-hidden="true">💼</div>
-                  <h2>Professionals</h2>
-                  <p>Build clean updates, reports, and reviews without hours of formatting.</p>
-                </article>
-                <article class="proof-card" role="listitem">
-                  <div class="proof-card__icon" aria-hidden="true">🚀</div>
-                  <h2>Founders</h2>
-                  <p>Generate pitch-ready presentations with structure, pace, and clarity.</p>
-                </article>
+                <span class="hero__microcopy" data-content="hero.microcopy"></span>
               </div>
             </div>
 
-            <!-- Right: animated slide carousel -->
-            <div class="hero__visual">
-              <section
-                class="preview-frame card card--glass"
-                aria-label="Slide preview carousel"
-                aria-roledescription="carousel"
-              >
-                <div class="preview-frame__header">
-                  <div>
-                    <span class="eyebrow eyebrow--compact">Live previews</span>
-                    <h2>Presentations that already feel&nbsp;presentation-ready</h2>
-                  </div>
-                  <span class="badge badge--dark" aria-live="polite" id="carousel-badge">AI generated</span>
-                </div>
-
-                <!-- Carousel track -->
+            <!-- Carousel — slides & dots injected by content-renderer -->
+            <div class="hero__carousel-wrap">
+              <section class="preview-frame card card--glass" aria-label="Slide preview carousel">
                 <div
                   class="carousel"
                   role="region"
                   aria-label="Slide examples"
                   id="slide-carousel"
                 >
-                  <div class="carousel__track" id="carousel-track">
-
-                    <!-- Slide 1: Students -->
-                    <article
-                      class="slide-card slide-card--emerald"
-                      role="group"
-                      aria-roledescription="slide"
-                      aria-label="Slide 1 of 3"
-                      id="slide-1"
-                    >
-                      <div class="slide-card__surface">
-                        <span class="slide-card__tag">For students</span>
-                        <h3>Class Project Deck</h3>
-                        <p>
-                          Convert messy research into a clean storyline with sections,
-                          takeaways, and modern visuals.
-                        </p>
-                        <div class="slide-card__mock" aria-hidden="true">
-                          <span></span>
-                          <span></span>
-                          <div class="mini-grid">
-                            <i></i>
-                            <i></i>
-                          </div>
-                        </div>
-                      </div>
-                    </article>
-
-                    <!-- Slide 2: Professionals -->
-                    <article
-                      class="slide-card slide-card--amber"
-                      role="group"
-                      aria-roledescription="slide"
-                      aria-label="Slide 2 of 3"
-                      id="slide-2"
-                    >
-                      <div class="slide-card__surface">
-                        <span class="slide-card__tag">For professionals</span>
-                        <h3>Quarterly Business Review</h3>
-                        <p>
-                          Turn updates, metrics, and next steps into executive-ready slides
-                          without switching between tools.
-                        </p>
-                        <div class="slide-card__mock" aria-hidden="true">
-                          <span></span>
-                          <span></span>
-                          <div class="mini-grid">
-                            <i></i>
-                            <i></i>
-                          </div>
-                        </div>
-                      </div>
-                    </article>
-
-                    <!-- Slide 3: Founders -->
-                    <article
-                      class="slide-card slide-card--teal"
-                      role="group"
-                      aria-roledescription="slide"
-                      aria-label="Slide 3 of 3"
-                      id="slide-3"
-                    >
-                      <div class="slide-card__surface">
-                        <span class="slide-card__tag">For founders</span>
-                        <h3>Investor Pitch Deck</h3>
-                        <p>
-                          Build a strong fundraising narrative with problem, solution,
-                          traction, market, and ask in one flow.
-                        </p>
-                        <div class="slide-card__mock" aria-hidden="true">
-                          <span></span>
-                          <span></span>
-                          <div class="mini-grid">
-                            <i></i>
-                            <i></i>
-                          </div>
-                        </div>
-                      </div>
-                    </article>
-
-                  </div><!-- /carousel__track -->
-
-                  <!-- Dot navigation -->
-                  <div class="carousel__dots" role="tablist" aria-label="Select slide">
-                    <button
-                      class="carousel__dot carousel__dot--active"
-                      role="tab"
-                      aria-selected="true"
-                      aria-controls="slide-1"
-                      data-index="0"
-                      id="dot-0"
-                      aria-label="Slide 1"
-                    ></button>
-                    <button
-                      class="carousel__dot"
-                      role="tab"
-                      aria-selected="false"
-                      aria-controls="slide-2"
-                      data-index="1"
-                      id="dot-1"
-                      aria-label="Slide 2"
-                    ></button>
-                    <button
-                      class="carousel__dot"
-                      role="tab"
-                      aria-selected="false"
-                      aria-controls="slide-3"
-                      data-index="2"
-                      id="dot-2"
-                      aria-label="Slide 3"
-                    ></button>
-                  </div>
+                  <div class="carousel__track" id="carousel-track" data-render="slides"></div>
+                  <div class="carousel__dots" role="tablist" aria-label="Select slide" data-render="dots"></div>
                 </div>
               </section>
             </div>
+
+            <!-- Proof cards — injected by content-renderer -->
+            <div class="hero__proof" role="list" data-render="proofCards"></div>
+
           </div>
         </section>
 
-        <!-- ── PROBLEM / SOLUTION ────────────────────────────────── -->
+        <!-- ═══════════════════════════════════════════════════════
+             PROBLEM / SOLUTION SECTION
+             Text source: content.json → problemSolution
+             ═══════════════════════════════════════════════════════ -->
         <section
           class="problem-solution section"
           id="problem-solution"
           aria-labelledby="ps-heading"
         >
-          <div class="shell">
+          <div class="shell shell--wide">
+
             <div class="section-heading">
-              <span class="eyebrow">Problem to solution</span>
-              <h2 id="ps-heading">
-                Most people waste time making slides instead of making the message better.
-              </h2>
-              <p>
-                Deckflow removes the friction that slows presentations down: design work,
-                structure decisions, tool-switching, and average-looking output.
-              </p>
+              <span class="eyebrow" data-content="ps.eyebrow"></span>
+              <h2 id="ps-heading" data-content="ps.headline"></h2>
+              <p data-content="ps.subtext"></p>
             </div>
 
             <div class="comparison-layout">
-              <!-- Problems -->
+
+              <!-- Problems card -->
               <article class="comparison-card comparison-card--dark">
-                <span class="badge badge--soft-dark">Problems</span>
-                <h3>What slows you down today</h3>
-                <ul class="feature-list feature-list--warm" role="list">
-                  <li>
-                    <span class="feature-list__icon" aria-hidden="true">⏱</span>
-                    Spending hours designing slides
-                  </li>
-                  <li>
-                    <span class="feature-list__icon" aria-hidden="true">🤯</span>
-                    Struggling to structure content
-                  </li>
-                  <li>
-                    <span class="feature-list__icon" aria-hidden="true">🔄</span>
-                    Switching between tools constantly
-                  </li>
-                  <li>
-                    <span class="feature-list__icon" aria-hidden="true">😐</span>
-                    Average, forgettable presentations
-                  </li>
-                </ul>
+                <span class="badge badge--soft-dark" data-content="ps.problems.badge"></span>
+                <h3 data-content="ps.problems.title"></h3>
+                <!-- Items injected by content-renderer -->
+                <ul class="feature-list feature-list--warm" role="list" data-render="problems"></ul>
               </article>
 
-              <!-- Solutions -->
+              <!-- Solution card -->
               <article class="comparison-card comparison-card--light">
-                <span class="badge badge--soft">Solution</span>
-                <h3>What Deckflow does instead</h3>
-                <ul class="feature-list feature-list--cool" role="list">
-                  <li>
-                    <span class="feature-list__icon" aria-hidden="true">⚡️</span>
-                    Generate slides in seconds
-                  </li>
-                  <li>
-                    <span class="feature-list__icon" aria-hidden="true">🧠</span>
-                    AI structures your content automatically
-                  </li>
-                  <li>
-                    <span class="feature-list__icon" aria-hidden="true">✨</span>
-                    Beautiful layouts, zero effort
-                  </li>
-                  <li>
-                    <span class="feature-list__icon" aria-hidden="true">📤</span>
-                    Export instantly, share anywhere
-                  </li>
-                </ul>
+                <span class="badge badge--soft" data-content="ps.solution.badge"></span>
+                <h3 data-content="ps.solution.title"></h3>
+                <!-- Items injected by content-renderer -->
+                <ul class="feature-list feature-list--cool" role="list" data-render="solutions"></ul>
               </article>
+
             </div>
           </div>
         </section>
 
-        <!-- ── FOOTER CTA ─────────────────────────────────────────── -->
+        <!-- ═══════════════════════════════════════════════════════
+             FOOTER CTA SECTION
+             Text source: content.json → footerCta
+             ═══════════════════════════════════════════════════════ -->
         <section class="footer-cta section" id="footer-cta" aria-labelledby="footer-cta-heading">
-          <div class="shell footer-cta__inner">
+          <div class="shell shell--wide footer-cta__inner">
             <div class="footer-cta__glow" aria-hidden="true"></div>
-            <span class="eyebrow">Get started today</span>
-            <h2 id="footer-cta-heading">Your next great presentation starts here.</h2>
-            <p>Join thousands of students, professionals, and founders already using Deckflow.</p>
+            <span class="eyebrow"      data-content="footerCta.eyebrow"></span>
+            <h2 id="footer-cta-heading" data-content="footerCta.headline"></h2>
+            <p                          data-content="footerCta.subtext"></p>
             <a class="button button--primary button--large" href="#" id="footer-cta-btn">
               <span class="button__icon" aria-hidden="true">✦</span>
-              Try Deckflow Free
+              <span data-content="footerCta.cta"></span>
             </a>
-            <span class="footer-cta__note">No credit card required&nbsp;•&nbsp;Free forever plan</span>
+            <span class="footer-cta__note" data-content="footerCta.note"></span>
           </div>
         </section>
+
       </main>
 
-      <!-- ── FOOTER ─────────────────────────────────────────────── -->
+      <!-- ═══════════════════════════════════════════════════════
+           SITE FOOTER
+           Text source: content.json → footer
+           ═══════════════════════════════════════════════════════ -->
       <footer class="site-footer" role="contentinfo">
         <div class="shell shell--wide site-footer__inner">
           <a class="brand" href="#hero" aria-label="Deckflow home">
             <span class="brand__mark" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="1" y="1" width="9" height="9" rx="2.5" fill="white" fill-opacity="0.9"/>
-                <rect x="12" y="1" width="9" height="9" rx="2.5" fill="white" fill-opacity="0.6"/>
-                <rect x="1" y="12" width="9" height="9" rx="2.5" fill="white" fill-opacity="0.6"/>
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1"  y="1"  width="9" height="9" rx="2.5" fill="white" fill-opacity="0.9"/>
+                <rect x="12" y="1"  width="9" height="9" rx="2.5" fill="white" fill-opacity="0.6"/>
+                <rect x="1"  y="12" width="9" height="9" rx="2.5" fill="white" fill-opacity="0.6"/>
                 <rect x="12" y="12" width="9" height="9" rx="2.5" fill="white" fill-opacity="0.9"/>
               </svg>
             </span>
             <span class="brand__copy">
-              <strong>Deckflow</strong>
-              <span>AI presentation generator</span>
+              <strong data-brand></strong>
+              <span data-tagline></span>
             </span>
           </a>
-          <p class="site-footer__copy">
-            &copy; 2026 Deckflow. Built with ✦ and AI.
-          </p>
+          <p class="site-footer__copy" data-content="footer.copyright"></p>
         </div>
       </footer>
+
     </div><!-- /page -->
 
-    <!-- ── CAROUSEL SCRIPT ───────────────────────────────────────── -->
-    <script>
-      (() => {
-        const track   = document.getElementById('carousel-track');
-        const dots    = document.querySelectorAll('.carousel__dot');
-        const TOTAL   = dots.length;
-        let   current = 0;
-        let   timer;
-
-        function goTo(index) {
-          current = (index + TOTAL) % TOTAL;
-          track.style.transform = `translateX(-${current * 100}%)`;
-
-          dots.forEach((dot, i) => {
-            const active = i === current;
-            dot.classList.toggle('carousel__dot--active', active);
-            dot.setAttribute('aria-selected', String(active));
-          });
-        }
-
-        function startAutoPlay() {
-          timer = setInterval(() => goTo(current + 1), 3800);
-        }
-
-        function resetAutoPlay() {
-          clearInterval(timer);
-          startAutoPlay();
-        }
-
-        dots.forEach(dot => {
-          dot.addEventListener('click', () => {
-            goTo(parseInt(dot.dataset.index, 10));
-            resetAutoPlay();
-          });
-        });
-
-        // Pause on hover / focus for accessibility
-        const carousel = document.getElementById('slide-carousel');
-        carousel.addEventListener('mouseenter', () => clearInterval(timer));
-        carousel.addEventListener('mouseleave', startAutoPlay);
-        carousel.addEventListener('focusin',    () => clearInterval(timer));
-        carousel.addEventListener('focusout',   startAutoPlay);
-
-        // Keyboard: left/right arrows
-        carousel.addEventListener('keydown', (e) => {
-          if (e.key === 'ArrowLeft')  { goTo(current - 1); resetAutoPlay(); }
-          if (e.key === 'ArrowRight') { goTo(current + 1); resetAutoPlay(); }
-        });
-
-        startAutoPlay();
-      })();
-    </script>
+    <!--
+      Scripts:
+       - content-renderer.js: loads content.json, populates the DOM, then inits carousel
+       - carousel.js is now handled inside content-renderer.js (no longer needed separately)
+    -->
+    <script src="./js/content-renderer.js"></script>
   </body>
 </html>

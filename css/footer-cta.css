@@ -1,0 +1,50 @@
+/* ================================================================
+   FOOTER CTA SECTION
+   ================================================================ */
+
+.footer-cta {
+  margin-top: 100px;
+}
+
+.footer-cta__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 72px 40px;
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 250, 243, 0.6);
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.footer-cta__glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(15, 118, 110, 0.12), transparent 50%),
+    radial-gradient(ellipse at 80% 50%, rgba(249, 115, 22, 0.10), transparent 50%);
+}
+
+.footer-cta__inner h2 {
+  max-width: 16ch;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+}
+
+.footer-cta__inner p {
+  max-width: 46ch;
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.footer-cta__note {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+}
